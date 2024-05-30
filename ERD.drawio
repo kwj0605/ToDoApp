@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-30T17:51:16.038Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="VSLBcClCMKv-yI5eozRd" version="24.4.10" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-30T17:51:56.731Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="xW5CXOCdDxGlFlirMVeN" version="24.4.10" type="github">
   <diagram name="페이지-1" id="8GhwL2vg_PhT-jSbVYvZ">
     <mxGraphModel dx="1418" dy="730" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -27,7 +27,7 @@
         <mxCell id="_m_kCWbIK-r1r3rfLRlH-10" value="비밀번호&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Varchar(255)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" parent="_m_kCWbIK-r1r3rfLRlH-1" vertex="1">
           <mxGeometry y="150" width="300" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="_m_kCWbIK-r1r3rfLRlH-11" value="작성일&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Timestamp" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" parent="_m_kCWbIK-r1r3rfLRlH-1" vertex="1">
+        <mxCell id="_m_kCWbIK-r1r3rfLRlH-11" value="작성일&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Datetime(6)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" parent="_m_kCWbIK-r1r3rfLRlH-1" vertex="1">
           <mxGeometry y="180" width="300" height="30" as="geometry" />
         </mxCell>
         <mxCell id="5IaNdQANZah1BXziboju-10" value="" style="group" vertex="1" connectable="0" parent="1">
@@ -50,7 +50,7 @@
         <mxCell id="5IaNdQANZah1BXziboju-16" value="일정 아이디 &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Bigint" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" vertex="1" parent="5IaNdQANZah1BXziboju-11">
           <mxGeometry y="120" width="300" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="5IaNdQANZah1BXziboju-17" value="작성일자&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Timestamp" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" vertex="1" parent="5IaNdQANZah1BXziboju-11">
+        <mxCell id="5IaNdQANZah1BXziboju-17" value="작성일자&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Datetime(6)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;" vertex="1" parent="5IaNdQANZah1BXziboju-11">
           <mxGeometry y="150" width="300" height="30" as="geometry" />
         </mxCell>
         <mxCell id="5IaNdQANZah1BXziboju-34" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;rounded=0;endFill=0;" edge="1" parent="1" source="_m_kCWbIK-r1r3rfLRlH-1" target="5IaNdQANZah1BXziboju-11">
