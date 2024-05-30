@@ -19,10 +19,14 @@ public class CommentController {
         this.commentService = commentService;
     }
 
-    @PostMapping("/schedule/{scheduleId}/comment")        // 질문: scheduleId를 CommentRequestDto랑 같이 바디로 받을 수 있는 지
+    @PostMapping("/schedules/{scheduleId}/comment")        // 질문: scheduleId를 CommentRequestDto랑 같이 바디로 받을 수 있는 지
     public CommentResponseDto createComment(@RequestBody CommentRequestDto requestDto, @PathVariable Long scheduleId) {
         return commentService.createComment(requestDto, scheduleId);
     }
 
+    @PutMapping("/schedules/{scheduleId}/comments/{commentId}")
+    public String updateComment(@PathVariable Long scheduleId, @PathVariable Long commentId, @RequestBody CommentRequestDto commentRequestDto) {
+        return commentService.updateComment(scheduleId, commentId, commentRequestDto);
+    }
 
 }
