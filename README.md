@@ -1,7 +1,8 @@
 # ToDoApp
 
 ## ERD
-![image](https://github.com/kwj0605/ToDoApp/assets/107970778/7766dc37-db79-4016-8c4c-7bd8b4b6438e)
+![image](https://github.com/kwj0605/ToDoApp/assets/107970778/9b433369-38ca-4055-befe-8150e3205dd7)
+
 
 
 
