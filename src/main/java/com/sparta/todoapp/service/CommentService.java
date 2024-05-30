@@ -10,8 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Optional;
-
 @Service
 public class CommentService {
 
@@ -54,6 +52,23 @@ public class CommentService {
         }
 
         // 선택한 일정과 댓글이 DB에 저장되어 있어야 한다.
+        Comment comment = checkScheduleAndComment(scheduleId, commentId);
+
+        // 댓글 내용 수정
+        comment.update(requestDto);
+
+        return comment.getComment(); // 수정된 댓글 반환
+    }
+
+    public void deleteComment(Long scheduleId, Long commentId) {
+        // 해당 댓글이 DB에 존재하는지 확인
+        Comment comment = checkScheduleAndComment(scheduleId, commentId);
+
+        // 댓글 내용 삭제
+        commentRepository.delete(comment);
+    }
+
+    private Comment checkScheduleAndComment(Long scheduleId, Long commentId) {
         scheduleRepository.findById(scheduleId).orElseThrow(
                 () -> new IllegalArgumentException("선택한 일정이 존재하지 않습니다.")
         );
@@ -61,10 +76,6 @@ public class CommentService {
         Comment comment = commentRepository.findById(commentId).orElseThrow(
                 () -> new IllegalArgumentException("선택한 댓글이 존재하지 않습니다.")
         );
-
-        // 댓글 내용 수정
-        comment.update(requestDto);
-
-        return comment.getComment(); // 수정된 댓글 반환
+        return comment;
     }
 }
