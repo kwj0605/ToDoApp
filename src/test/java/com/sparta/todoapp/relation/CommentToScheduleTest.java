@@ -32,7 +32,6 @@ public class CommentToScheduleTest {
 
 
         Comment comment = new Comment();
-        comment.setScheduleId("22");
         comment.setComment("22");
         comment.setUserId(22L);
         comment.setSchedule(schedule);  //  외래 키 설정
